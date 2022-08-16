@@ -1,5 +1,5 @@
 # ClinicalNLP
-### Natural Language Processing within Python for symptom extraction of clinical text
+Natural Language Processing within Python for symptom extraction of clinical text
 
 
 ## Overview
