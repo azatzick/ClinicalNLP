@@ -4,27 +4,39 @@ Natural Language Processing within Python for symptom extraction of clinical tex
 
 
 ## Overview
-      here, i will state the overview of my project
+This project maps clinical text to existing biomedical corpora through various Unified Medical Language System (UMLS) technologies. All code is in python
 
-## APIs used:  
+## API Requirements and Resources:  
 1.	Python-based web API for MetaMap: SKR Web API 
       -  Packages Required: requests, requests html
-      - Link to instructions on building and installing the api:https://github.com/HHS/uts-rest-api/tree/master/samples/python 
+      - [Click for instructions on and installing the MetaMap API](https://github.com/lhncbc/skr_web_python_api)
 2.    UMLS REST API 
       - Packages required: requests, json, argparse, pyquery, lxml 
-      - Link to samples that code was built on: https://github.com/HHS/uts-rest-api/tree/master/samples/python
-      - Link to UMLS API technical documentation: https://documentation.uts.nlm.nih.gov/rest/home.html
+      - [Click for sample code using UMLS REST API](https://github.com/HHS/uts-rest-api/tree/master/samples/python)
+      - [UMLS REST API technical documentation](https://documentation.uts.nlm.nih.gov/rest/home.html)
 
 ## Python Scripts: 
 
-### metamap-api 
+### **metamap-api** 
 
-takes in a deidentified clinical note (in the form of a text file) and utilizes MetaMap to perform biomedical mapping to the UMLS Metathesaurus. The program outputs a text file with formatted mappings for each identified entity (sign or symtpom)in the note; this output includes the preferred term name, CUI, and additional information. The output file will be subsequently used by ‘cui-search.py’ to search SNOMED-CT.
+Parameters: a deidentified clinical note `.txt`. The code utilizes MetaMap to perform biomedical NLP. MetaMap identifies concepts in clinical text, mapping them to over 200 dictionaries in the UMLS Metathesaurus. Negation handling (NegEx) is included in this process. 
+
+Output: a `.txt` file with  mappings for each identified sign or symptom in the note. For each term, the output file displays: 
+- Preferred term name 
+- Concept Unique Identifier (CUI) 
+- Additional information
 
 
-### cui-search
-takes in concept unique identifier (CUI) and preferred term name -- maps to SNOMED-CT ontology, outputting text file
 
-**a concept unique identifier is a code used to tag clinical terms in biomedical dictionaries**
+### **cui-search**
+Parameters: list of CUIs and term names. The script accesses the concept mappings of each CUI within the SNOMED-CT ontology. This ontological structure can be described as a graph of connected terms. 
+
+Output: a `.txt` file for *each* CUI in the input list. For each term, the output file displays: 
+- Related ID name
+- ui (SNOMED-CT unique identifier) 
+- Source Vocabulary (this will be SNOMED-CT) 
+- Relation Label
+- Related ID 
+
 
 
