@@ -22,7 +22,8 @@ takes in a deidentified clinical note (in the form of a text file) and utilizes 
 
 
 ### cui-search
-takes in concept unique identifier and preferred term name -- maps to SNOMED-CT ontology, outputting text file
+takes in concept unique identifier (CUI) and preferred term name -- maps to SNOMED-CT ontology, outputting text file
 
+**a concept unique identifier is a code used to tag clinical terms in biomedical dictionaries**
 
 
