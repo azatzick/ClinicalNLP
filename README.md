@@ -1,5 +1,10 @@
 
-# ClinicalNLP
+<div id="header" align="right">
+  <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" width="50"/>
+</div>
+
+# Clinical NLP 
+
 Natural Language Processing within Python for symptom extraction of clinical text
 
 
