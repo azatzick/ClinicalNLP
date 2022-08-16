@@ -17,10 +17,12 @@ Natural Language Processing within Python for symptom extraction of clinical tex
 ## Python Scripts: 
 
 ### metamap-api 
-      takes in a deidentified clinical note (in the form of a text file) and utilizes MetaMap to perform biomedical mapping to the UMLS Metathesaurus. The program outputs a text file with formatted mappings for each identified entity (sign or symtpom)in the note; this output includes the preferred term name, CUI, and additional information. The output file will be subsequently used by ‘cui-search.py’ to search SNOMED-CT.
+
+takes in a deidentified clinical note (in the form of a text file) and utilizes MetaMap to perform biomedical mapping to the UMLS Metathesaurus. The program outputs a text file with formatted mappings for each identified entity (sign or symtpom)in the note; this output includes the preferred term name, CUI, and additional information. The output file will be subsequently used by ‘cui-search.py’ to search SNOMED-CT.
+
 
 ### cui-search
-      takes in concept unique identifier and preferred term name -- maps to SNOMED-CT ontology, outputting text file
+takes in concept unique identifier and preferred term name -- maps to SNOMED-CT ontology, outputting text file
 
 
 
