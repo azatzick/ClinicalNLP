@@ -1,3 +1,4 @@
+![python](https://user-images.githubusercontent.com/88257140/184999278-e63899b2-26b7-4def-80ff-68691ed68cae.png)
 # ClinicalNLP
 Natural Language Processing within Python for symptom extraction of clinical text
 
