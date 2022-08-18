@@ -9,15 +9,15 @@ Natural Language Processing within Python for symptom extraction of clinical tex
 
 
 ## Overview
-This project maps clinical text to existing biomedical corpora through various Unified Medical Language System (UMLS) technologies. All code is in python
+This project maps clinical text to biomedical corpora through Unified Medical Language System (UMLS) technologies. All code is in python. 
 
 ## API Requirements and Resources:  
 1.	Python-based web API for MetaMap: SKR Web API 
       -  Packages Required: requests, requests html
-      - [Click for instructions on and installing the MetaMap API](https://github.com/lhncbc/skr_web_python_api)
+      - [Instructions on and installing the MetaMap API](https://github.com/lhncbc/skr_web_python_api)
 2.    UMLS REST API 
       - Packages required: requests, json, argparse, pyquery, lxml 
-      - [Click for sample code using UMLS REST API](https://github.com/HHS/uts-rest-api/tree/master/samples/python)
+      - [Sample code using UMLS REST API](https://github.com/HHS/uts-rest-api/tree/master/samples/python)
       - [UMLS REST API technical documentation](https://documentation.uts.nlm.nih.gov/rest/home.html)
 
 ## Python Scripts: 
