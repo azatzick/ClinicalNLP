@@ -5,10 +5,8 @@
 
 # Clinical NLP 
 
-Natural Language Processing within Python for symptom extraction of clinical text
+Natural language processing (NLP) in Python for symptom extraction of clinical text.
 
-
-## Overview
 This project maps clinical text to biomedical corpora through Unified Medical Language System (UMLS) technologies. All code is in python. 
 
 ## API Requirements and Resources:  
