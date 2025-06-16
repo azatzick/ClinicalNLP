@@ -21,12 +21,11 @@ parser.add_argument("-i", "--inputfile", required = True, help = "input file")
 args = parser.parse_args()
 serviceurl = args.serviceurl
 
-apikey = 'a90cc3d1-d392-4903-bf9a-228a8ac8802e'                  #ENTER PERSONAL API KEY HERE
-email = 'alinazat@uw.edu'                                        #ENTER PERSONAL EMAIL HERE
+apikey =  #ENTER PERSONAL API KEY HERE                
+email =    #ENTER PERSONAL EMAIL HERE                                  
 
-#ENTER PATH TO INPUT FILE HERE
-inputfile =  '/Users/alinazatzick/Desktop/HMC Summer 2022/MetaMap-CuiSearch/Deidentified_files_for_Onedrive' + "/" +  args.inputfile 
-outputfile = '/Users/alinazatzick/Desktop/HMC Summer 2022/MetaMap-CuiSearch/OUTPUT/MetaMap/' + "MetaOUT" + args.inputfile
+inputfile =  #ENTER PATH TO INPUT FILE HERE
+outputfile = #ENTER PATH TO output FILE HERE
 
 #CHANGING PANDAS SETTINGS FOR TABLE DISPLAY
 pd.options.mode.chained_assignment = None
